@@ -4,7 +4,7 @@
 
 int main(){
 
-int a[10];
+int a[11];
 int i,j,k;
 int l=sizeof(a)/sizeof(int);
 void inplace_swap(int *x, int *y){
@@ -20,7 +20,7 @@ printf("Length of array is %d\n",sizeof(a)/sizeof(int));
 
 void reverse_array(int a[], int cnt){
 int first, last;
-for(first=0, last =cnt-1; first<=last; first++,last--)
+for(first=0, last =cnt-1; first<last; first++,last--)
 	inplace_swap(&a[first], &a[last]);
 }
 
